@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Moodora"
+description = "A frontend-only creative studio for planning social feeds, making photo collages, exploring visual aesthetics, and organizing local creative projects."
+version = "1.0.0"
+id = "artifacts/moodora"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20115
+
+[services.development]
+run = "pnpm --filter @workspace/moodora run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/moodora", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/moodora/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20115"
+BASE_PATH = "/"
