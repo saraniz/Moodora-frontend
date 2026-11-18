@@ -16,6 +16,7 @@ out-tsc
 
 # dependencies
 node_modules
+*.local
 
 # IDEs and editors
 /.idea
