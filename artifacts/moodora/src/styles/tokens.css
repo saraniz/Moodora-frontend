@@ -1,0 +1,43 @@
+/* Moodora palette: denim blue, sky, silver and a little lilac, all solid, with black outlines. */
+:root {
+  --blue: #6b8ccf;
+  --blue-deep: #3a5aa3;
+  --sky: #b9d0f0;
+  --mist: #dde8f7;
+  --silver: #cdd1d9;
+  --lilac: #e3d8ea;
+
+  --page: var(--mist);
+  --hero: #c3d4ee;
+  --surface: #ffffff;
+  --bar: #eef1f6;
+  --slab: var(--blue);
+  --line: #000000;
+  --text: #000000;
+  --text-soft: #475069;
+  --solid: #000000;
+  --on-solid: #ffffff;
+  --danger: #a8283d;
+
+  --outline: 1.5px solid var(--line);
+  --radius: 10px;
+  --serif: 'Bodoni Moda', 'Didot', serif;
+  --sans: 'Figtree', sans-serif;
+  --dock-space: 124px;
+  color-scheme: light;
+}
+
+.dark {
+  --page: #141b30;
+  --hero: #1c2747;
+  --surface: #202a48;
+  --bar: #2a3557;
+  --slab: #4a68ab;
+  --line: #a9bfe8;
+  --text: #f1f5ff;
+  --text-soft: #b3c0de;
+  --solid: #dde8f7;
+  --on-solid: #141b30;
+  --danger: #ff9aa9;
+  color-scheme: dark;
+}
